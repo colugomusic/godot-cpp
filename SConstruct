@@ -204,6 +204,7 @@ elif env['platform'] == 'osx':
         )
 
     env.Append(CCFLAGS=['-std=c++14', '-arch', 'x86_64'])
+    env.Append(CCFLAGS=['-mmacosx-version-min=10.11'])
     env.Append(LINKFLAGS=[
         '-arch',
         'x86_64',
